@@ -14,9 +14,9 @@
 
 <div>
   <h1>Hello, {{ request.user.username }}!</h1>
-  <i>InstaCar member since: {{ request.user.joined_date }}</i>
+  <i id="member">InstaCar member since: {{ request.user.joined_date }}</i>
 </div>
-
+<br>
 <div>
   {% if request.user.profile_image %}
   <img
